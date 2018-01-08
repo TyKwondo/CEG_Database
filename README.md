@@ -71,6 +71,7 @@ Login is always root. Set password if not prompted with code below
 * mysql -u root -p
 
 '''
+
 CREATE DATABASE project;
 
 CREATE USER 'root'@'localhost' IDENTIFIED BY 'yourpassword';
@@ -80,6 +81,7 @@ GRANT ALL PRIVILEGES ON webapp.* TO 'root'@'localhost' IDENTIFIED BY 'yourpasswo
 FLUSH PRIVILEGES;
 
 EXIT;
+
 '''
 
 If you made changes to the inputed information, be sure to change it in the settings.py file
