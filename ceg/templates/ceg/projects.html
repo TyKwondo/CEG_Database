@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+<h1>Home</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+    <title>Project List</title>
+    {% endblock %}
+
+  </head>
+  <body>
+{% block body %}
+<h1>Home</h1>
+<script>
+
+</script>
+<table>
+<tr>
+  <th>Points List</th>
+  <th>Date Created</th>
+</tr>
+{% for p in obj %}
+<tr>
+  <td><a href="/ceg/projects/{{p.name}}/data_flow.html">{{ p.name }}</a></td>
+  <td>{{ p.pub_date }}</td>
+</tr>
+{% endfor %}
+</table>
+<a href="points_list_form.html">Add</a>
+{% endblock %}
+  </body>
+</html>
