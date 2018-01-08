@@ -73,7 +73,7 @@ Login is always root. Set password if not prompted with code below
 ```
 CREATE DATABASE project;
 CREATE USER 'root'@'localhost' IDENTIFIED BY 'yourpassword';
-GRANT ALL PRIVILEGES ON webapp.* TO 'root'@'localhost' IDENTIFIED BY 'yourpassword' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON project.* TO 'root'@'localhost' IDENTIFIED BY 'yourpassword' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 EXIT;
 ```
