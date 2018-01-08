@@ -69,6 +69,7 @@ Login is always root. Set password if not prompted with code below
 
 * sudo apt-get install python3-mysqldb
 * mysql -u root -p
+
 '''
 CREATE DATABASE project;
 CREATE USER 'root'@'localhost' IDENTIFIED BY 'yourpassword';
