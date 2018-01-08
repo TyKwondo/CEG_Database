@@ -70,19 +70,13 @@ Login is always root. Set password if not prompted with code below
 * sudo apt-get install python3-mysqldb
 * mysql -u root -p
 
-'''
-
+```
 CREATE DATABASE project;
-
 CREATE USER 'root'@'localhost' IDENTIFIED BY 'yourpassword';
-
 GRANT ALL PRIVILEGES ON webapp.* TO 'root'@'localhost' IDENTIFIED BY 'yourpassword' WITH GRANT OPTION;
-
 FLUSH PRIVILEGES;
-
 EXIT;
-
-'''
+```
 
 If you made changes to the inputed information, be sure to change it in the settings.py file
 
